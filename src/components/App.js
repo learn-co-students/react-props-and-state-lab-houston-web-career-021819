@@ -4,14 +4,11 @@ import Filters from './Filters'
 import PetBrowser from './PetBrowser'
 
 class App extends React.Component {
-  constructor() {
-    super()
 
-    this.state = {
-      pets: [],
-      filters: {
-        type: 'all'
-      }
+  state = {
+    pets: [],
+    filters: {
+      type: 'all'
     }
   }
 
@@ -32,7 +29,6 @@ class App extends React.Component {
   }
 
   onAdoptPet = (id) => {
-    console.log(id)
     this.setState({ pets: this.state.pets.map( pet => {
       return pet.id === id ? {...pet, isAdopted: true} : pet
     })})
