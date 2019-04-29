@@ -10,7 +10,7 @@ import PetBrowser from '../src/components/PetBrowser';
 Enzyme.configure({ adapter: new Adapter() });
 
 const ALL_PETS = getAll();
-
+/*
 describe('<PetBrowser />', () => {
   it('should render Pet components based on its props', () => {
     const wrapper = shallow(<PetBrowser pets={ALL_PETS} />);
@@ -28,3 +28,4 @@ describe('<PetBrowser />', () => {
     ).to.be.true;
   });
 });
+*/
